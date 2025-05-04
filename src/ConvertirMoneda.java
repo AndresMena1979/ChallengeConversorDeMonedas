@@ -8,7 +8,7 @@ public class ConvertirMoneda {
         double resultado;
 
         switch (opcion) {
-            case 1 -> { // USD => Peso argentino
+            case 1 -> { // USD => Peso argentino.
                 double tasa = datos.conversion_rates().get("ARS");
                 resultado = cantidad * tasa;
                 System.out.printf("%.2f USD = %.2f ARS%n", cantidad, resultado);
@@ -40,11 +40,9 @@ public class ConvertirMoneda {
             }
             case 7 -> {
                 System.out.println("Gracias por usar el conversor. ¡Hasta luego!");
-                return;
             }
             default -> {
                 System.out.println("Opción no válida.");
-                return;
             }
         }
     }
